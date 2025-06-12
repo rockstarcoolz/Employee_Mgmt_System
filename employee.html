@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employees - NovaDesk</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body onload="checkAdmin()">
+    <div class="topbar">
+<a href="index.html" class="home-btn">🏠 Home</a>
+<a href="toolbox.html" class="home-btn" style="margin-left:6px;">🧰 Nova Toolbox</a>
+<span class="top-title">NovaDesk Employee Database Management</span>
+</div>
+<div class="container">
+<h2>Add Employee</h2>
+<form id="employeeForm">
+<input name="name" placeholder="Employee Name" required />
+<input name="empid" placeholder="Employee ID" required />
+<input name="dept" placeholder="Department" required />
+<input name="role" placeholder="Role/Designation" required />
+<input name="email" type="email" placeholder="Email" required />
+<input name="mobile" placeholder="Mobile Number" required />
+<button type="submit">Add Employee</button>
+</form>
+<button onclick="downloadCSV('employees')">Download CSV</button>
+<div id="employeeList"></div>
+<div class="info">
+<b>Tip:</b> Add new employees. Admin only. All fields are required for a complete record.
+</div>
+</div>
+<div id="nova-chat-widget"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

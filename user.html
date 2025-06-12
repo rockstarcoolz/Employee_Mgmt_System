@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Profile - NovaDesk</title>
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body onload="showUserProfile()">
+    <div class="topbar">
+<a href="index.html" class="home-btn">🏠 Home</a>
+<a href="toolbox.html" class="home-btn" style="margin-left:6px;">🧰 Nova Toolbox</a>
+<span class="top-title">NovaDesk Employee Database Management</span>
+</div>
+<div class="container">
+<h2>Welcome, <span id="userProfileName"></span>!</h2>
+<p>This is your employee profile page. You can submit feedback, questions, or requests for admin to view.</p>
+<div id="userProfileBox"></div>
+<hr>
+<h3>Submit Help Request / Feedback</h3>
+<form id="feedbackForm">
+<textarea id="feedbackText" placeholder="Type your request, suggestion, or help needed..." required></textarea>
+<button type="submit">Send Feedback</button>
+</form>
+</div>
+<div id="nova-chat-widget"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
